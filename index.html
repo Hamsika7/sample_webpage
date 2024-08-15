@@ -1,0 +1,107 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation and header section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" id="addClassButton">Add Class</a></li>
+                <li><a href="#" id="addStudentButton">Add Student</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Class selector and student list -->
+        <section id="classSelectorSection">
+            <select id="classSelector"></select>
+            <ul id="studentsList"></ul>
+        </section>
+
+        <!-- Add class popup -->
+        <div id="addClassPopup">
+            <input type="text" id="newClassName" placeholder="Enter class name">
+            <button id="addClassButton">Add Class</button>
+        </div>
+
+        <!-- Add student popup -->
+        <div id="addStudentPopup">
+            <input type="text" id="newStudentName" placeholder="Enter student name">
+            <input type="number" id="newStudentRoll" placeholder="Enter roll number">
+            <button id="addStudentButton">Add Student</button>
+        </div>
+
+        <!-- Attendance submission section -->
+        <section id="summarySection">
+            <button id="submitAttendanceButton">Submit Attendance</button>
+        </section>
+
+        <!-- Attendance result section -->
+        <section id="resultSection">
+            <!-- Attendance result will be displayed here -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
